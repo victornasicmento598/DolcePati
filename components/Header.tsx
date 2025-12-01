@@ -48,6 +48,8 @@ export const Header: React.FC<HeaderProps> = ({ sections, onNavigate, cartItemCo
     ))
   ];
 
+  const whatsappMessage = encodeURIComponent("Olá DolcePati! Vim pelo site e gostaria de tirar uma dúvida.");
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-lg border-b border-gray-200/50 shadow-sm animate-fade-in-down">
       <div className="container mx-auto px-4 h-20 flex justify-between items-center">
@@ -86,10 +88,10 @@ export const Header: React.FC<HeaderProps> = ({ sections, onNavigate, cartItemCo
             <InstagramIcon className="w-6 h-6" />
           </a>
           <a
-            href={`https://wa.me/${WHATSAPP_NUMBER}`}
+            href={`https://wa.me/${WHATSAPP_NUMBER}?text=${whatsappMessage}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#6E4B1F] hover:text-[#EAA95A] transition-colors"
+            className="text-[#6E4B1F] hover:text-[#25D366] transition-colors"
             aria-label="WhatsApp"
           >
             <WhatsAppIcon className="w-6 h-6" />
