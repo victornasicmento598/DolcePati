@@ -1,4 +1,3 @@
-
 import { type Product, ProductCategory } from './types';
 
 export const WHATSAPP_NUMBER = "5551981385900";
@@ -140,7 +139,7 @@ const PEGUE_MONTE_PRODUCTS: Product[] = [
     { name: '15 Anos', category: ProductCategory.PEGUE_MONTE_OUTROS, price: 100 },
     { name: 'Tema 15 Anos', category: ProductCategory.PEGUE_MONTE_OUTROS, price: 100 },
     { name: 'Chá de Casa Nova', category: ProductCategory.PEGUE_MONTE_OUTROS, price: 100 },
-].map((item, index) => ({
+].map((item) => ({
     ...item,
     description: `Decoração prática para sua festa! Aluguel do tema ${item.name}.`,
     unit: 'kit',

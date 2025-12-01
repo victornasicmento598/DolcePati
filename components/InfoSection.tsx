@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { PixIcon, CreditCardIcon, BanknoteIcon, SmartphoneIcon, CopyIcon, ShoppingCartIcon, WhatsAppIcon } from './icons';
+import { PixIcon, CreditCardIcon, BanknoteIcon, SmartphoneIcon, CopyIcon } from './icons';
 
 const InfoItem: React.FC<{ title: string; children: React.ReactNode }> = ({ title, children }) => (
     <div className="bg-white/50 rounded-xl p-5 border border-[#EAA95A]/20">

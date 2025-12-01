@@ -1,4 +1,3 @@
-
 import React, { useMemo, useState, useCallback } from 'react';
 import { type OrderItem } from '../types';
 import { XIcon, MinusIcon, PlusIcon, WhatsAppIcon, ShoppingCartIcon } from './icons';
@@ -51,7 +50,7 @@ export const OrderSidebar: React.FC<OrderSidebarProps> = ({ isOpen, onClose, ite
         const product = PRODUCTS.find(p => p.name === item.name);
         if (item.customizations) {
             Object.keys(item.customizations).forEach(groupId => {
-                const value = item.customizations[groupId];
+                const value = item.customizations![groupId];
                 const group = product?.customizationGroups?.find(g => g.id === groupId);
                 const groupName = group ? group.name.replace(/ *\([^)]*\) */g, "").replace(/^[0-9]+\. /, '') : groupId;
                 
